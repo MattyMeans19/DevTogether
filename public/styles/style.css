@@ -1,0 +1,258 @@
+.iceberg-regular {
+    font-family: "Iceberg", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .tomorrow-regular {
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+*.hidden{
+    visibility: hidden;
+    height: 1px;
+}
+
+.banner{
+    background-color: #78c88b;
+    display: flex;
+    flex-wrap: wrap;
+}
+.banner img{
+    height: 150px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-self: center;
+    margin-left: 15px;
+}
+
+.banner h1{
+    text-align: center;
+    font-family: "Iceberg";
+    font-size: 72px;
+    flex-grow: 3;
+    flex-shrink: 2;
+    color: #a2dc78;
+}
+.banner h1 a{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: inherit;
+    -webkit-text-stroke: 1px black;
+    letter-spacing: 30px;
+}
+
+#NavBar {
+    background-color: #51bd9d;
+    outline: 5px solid black;
+    display: flex;
+    flex-wrap: nowrap;
+    height: 50px;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+#NavBar .nav-item{
+    margin-top: 10px;
+    height: 30px;
+    text-align: center;
+    background-color: #badf6e;
+    flex-grow: 2;
+    font-family: "Tomorrow";
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.Intro{
+    font-family: "Tomorrow";
+    background-color: #51bd9d;
+    color: #badf6e;
+    font-size: 85px;
+    text-align: center;
+    outline: 5px solid black;
+}
+
+#registrationForm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #a2dc78;
+    margin-top: 10px;
+    outline: 2px solid black;
+}
+
+#registrationForm .regLabel{
+    font-family: "Tomorrow";
+    padding: 5px;
+    font-size: 32px;
+}
+
+#registrationForm .regInput{
+    font-family: "Tomorrow";
+    padding: 10px;
+    font-size: 28px;
+    height: 38px;
+}
+
+#registrationForm #Pronouns{
+    font-size: 12px;
+}
+#registrationForm #Gender{
+    font-size: 12px;
+}
+
+#registrationForm #registerButton{
+    font-size: 28px;
+    font-family: "Iceberg";
+    align-self: flex-end;
+    width: 40%;
+    margin-top: 20px;
+}
+
+#registrationForm h2{
+    background-color: #51bd9d;
+    outline: 2px solid black;
+    text-align: center;
+    font-size: 32px;
+}
+
+#registrationForm h3{
+    background-color: #78c88b;
+    outline: 2px solid black;
+    text-align: center;
+    font-size: 32px;
+}
+
+#registrationForm #SkillSet label{
+    background-color: #51bd9d;
+    font-size: 28px;
+    border-radius: 5%;
+}
+
+h1 #registeredMessage{
+    order: 0;
+}
+
+#LoginBox{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    padding: 15px;
+    background-color: #a2dc78;
+    outline: 2px solid black;
+}
+
+#LoginBox input{
+    font-family: "Tomorrow";
+    padding: 10px;
+    font-size: 28px;
+    width: 500px;
+    margin-bottom: 25px;
+}
+
+#LoginBox label{
+    font-family: "Tomorrow";
+    padding: 10px;
+    font-size: 28px;
+}
+
+.HomeFlex{
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    font-family: "Iceberg";
+}
+
+.UserMenu{
+    align-self: flex-start;
+    background-color: #a2dc78;
+    outline: 2px solid black;
+    margin: 15px;
+    padding: 5px;
+    font-size: 20px;
+    flex: 0 1 auto;
+}
+
+.UserPosts{
+    width: 80%;
+    margin-top: 15px;
+    margin-left: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.UserPosts textarea{
+    width: 90%;
+    height: 100px;
+    font-size: 20px;
+    font-family: "Tomorrow";
+}
+
+.UserPosts #newPostBox input{
+    font-size: 32px;
+    width: 30%;
+    text-align: center;
+}
+
+.CommunityPosts{
+    width: 100%;
+    align-self: center;
+    text-align: center;
+    background-color: #78c88b;
+    font-family: "Tomorrow";
+}
+
+.CommunityPosts h3{
+    font-family: "Iceberg";
+    font-size: 42px;
+    font-weight: bolder;
+    font-style: italic;
+    background-color: #a2dc78;
+}
+
+.CommunityPosts .newPost{
+    text-align: left;
+    margin-left: 30px;
+    width: 80%;
+    outline: 2px solid black;
+}
+
+.CommunityPosts .newPost h4{
+    margin-left: 25px;
+    font-size: 32px;
+}
+
+.CommunityPosts .newPost p{
+    font-size: 42px;
+    background-color: #a2dc78;
+    outline: 2px solid black;
+}
+
+.CommunityPosts .newPost h5{
+    text-align: end;
+}
+
+.messageBanner{
+    text-align: center;
+    background-color: #51bd9d;
+    outline: 2px solid black;
+}
+
+.SupportMessage{
+    text-align: center;
+    background-color: #51bd9d;
+    outline: 2px solid black;
+}
+
+.LoginMessage{
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: #badf6e;
+}

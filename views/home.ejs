@@ -1,0 +1,39 @@
+<%- include("partials/header.ejs") %>
+
+<nav id="NavBar">
+    <a href="/home" class="nav-item">Home</a>
+    <a href="/messages" class="nav-item">Messages</a>
+    <a href="/support" class="nav-item">Support</a>
+    <a href="/" class="nav-item">Sign Out</a>
+</nav>
+
+<div class="HomeFlex">
+   <div class="UserMenu">
+    <h2 id="UserName"> <%= CurrentUser %> </h2>
+    <h3 id="fullName"> <%= FullName %> </h3>
+    <a href="/editprofile">Edit Profile</a>
+</div>
+
+<div class="UserPosts">
+    <h3>Post your thoughts, work, tips, etc..</h3>
+    <form action="/newpost" method="POST" class="userPost" id="newPostBox">
+        <textarea name="newMessage" placeholder="Create a post..." required> </textarea>
+        <input type="submit" value="Post" id="SubmitPost"/>
+    </form>
+</div>
+
+<div class="CommunityPosts">
+    <h3>Community Posts</h3>
+   <% availablePosts.forEach(post => { %>
+    <div class="newPost">
+        <h4> <%= post.poster %> </h4>
+        <p> <%= post.posting%> </p>
+        <h5> <%= post.postDate%> </h5>
+    </div>
+<% }) %>
+</div>
+ <%- include("partials/footer.ejs") %>
+</div>
+
+
+

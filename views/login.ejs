@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+
+<form action="/logging" method="POST" id="LoginBox">
+    <label for="UserName"> Username: </label>
+    <input type="text" name="UserName" id="UserName" required />
+    <label for="Password"> Password: </label>
+    <input type="password" name="Password" id="Password" required />
+
+    <input type="submit" value="Login">
+</form>
+
+<h2 class="LoginMessage"><%= message %></h2>
+
+
+
+
+<%- include("partials/footer.ejs") %>

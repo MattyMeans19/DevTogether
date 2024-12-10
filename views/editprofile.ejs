@@ -1,0 +1,67 @@
+<%- include("partials/header.ejs") %>
+
+<nav id="NavBar">
+    <a href="/home" class="nav-item">Home</a>
+    <a href="/messages" class="nav-item">Messages</a>
+    <a href="/support" class="nav-item">Support</a>
+    <a href="/" class="nav-item">Sign Out</a>
+</nav>
+
+<form action="/save" method="POST" class="NewUserInfo" id="registrationForm">
+    <div class="BasicInfo">
+        <h2>User Info</h2>
+        <div id="UserName">
+            <label for="fName">First Name: </label>
+            <input type="text" name="fName" id="fName" required />
+            <label for="lName">Last Name: </label>
+            <input type="text" name="lName" id="lName" required />  
+        </div><br>
+        <div id="Email">
+            <label for="UserEmail">Email Address: </label>
+            <input type="email" name="UserEmail" id="UserEmail">
+        </div><br>
+        <div id="UserBirthDate">
+            <label for="Birthdate">Birth Date: </label>
+            <input type="date" name="Birthdate" id="Birthdate">
+        </div><br>
+        <div id="Identity">
+            <label for="Gender">Gender: </label>
+            <select id="Gender">
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Non-Binary">Non-Binary</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="Pronouns">Pronouns: </label>
+            <select id="Pronouns">
+                <option value="She/Her">She/Her</option>
+                <option value="He/Him">He/Him</option>
+                <option value="They/Them">They/Them</option>
+            </select>
+        </div><br>
+        <div id="SkillSet">
+            <h3>Select your Development Skills/Interests</h3>
+            <input type="checkbox" id="GameDevelopment" name="GameDevelopment" value="GameDevelopment">
+            <label for="GameDevelopment">Game Development</label><br>
+            <input type="checkbox" id="WebDevelopment" name="WebDevelopment" value="WebDevelopment">
+            <label for="WebDevelopment">Web Development</label><br>
+            <input type="checkbox" id="3DAnimation" name="3DAnimation" value="3DAnimation">
+            <label for="3DAnimation">3D Animation</label><br>
+            <input type="checkbox" id="2DAnimation" name="2DAnimation" value="2DAnimation">
+            <label for="2DAnimation">2DAnimation</label><br>
+            <input type="checkbox" id="MusicProduction" name="MusicProduction" value="MusicProduction">
+            <label for="MusicProduction">Music Production</label><br>
+            <input type="checkbox" id="VideoEditing" name="VideoEditing" value="VideoEditing">
+            <label for="VideoEditing">Video Editing</label><br>
+            <input type="checkbox" id="VoiceActing" name="VoiceActing" value="VoiceActing">
+            <label for="VoiceActing">Voice Acting</label><br>
+        </div><br>
+        <div id="UserInfo">
+            <label for="UserPassword">Change Password: </label>
+            <input type="text" name="UserPassword" id="UserPassword" required />  
+        </div><br>
+    </div>
+    <input type="submit" value="Save" id="registerButton">
+</form>
+
+<%- include("partials/footer.ejs") %>
