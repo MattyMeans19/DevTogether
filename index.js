@@ -108,9 +108,7 @@ var posts = [{poster: "Admin", posting: "Welcome to DevTogether! Super exctied t
     res.render("home.ejs", {CurrentUser: userName, FullName: fullName, availablePosts: posts});
   });
 
-  app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-  });
+  app.listen(process.env.PORT || 3000);
 
 
   function getUser(){
